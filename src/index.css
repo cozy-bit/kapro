@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #232F4D;
+  --color-brand-blue: #7FAAE4;
+  --color-brand-light: #EBF2FC;
+  --color-brand-bg: #F4F7FB;
+  --color-brand-footer: #1E2738;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: #222B45;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
