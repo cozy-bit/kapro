@@ -6,8 +6,8 @@ const ReviewsSection = () => {
 			<div className='mx-auto max-w-[1216px] px-6'>
 				<div className='mb-[36px] flex md:flex-row flex-col items-start justify-between gap-10'>
 					<h2 className='max-w-[400px] text-[34px] font-bold leading-[1.15] text-[#23395D]'>
-						Отзывы
-						<br />о нашей работе
+						Отзывы о нашей
+						<br />работе
 					</h2>
 
 					<p className='max-w-[600px] pt-[4px] text-[16px] leading-[1.45] text-[#4776B4]'>
