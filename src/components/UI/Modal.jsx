@@ -33,7 +33,6 @@ export default function OrderModalForm({ isOpen, onClose }) {
 				}}
 			>
 				<div className='relative px-8 py-8 max-sm:px-5 max-sm:py-6'>
-					
 					<button
 						type='button'
 						onClick={onClose}
@@ -42,13 +41,11 @@ export default function OrderModalForm({ isOpen, onClose }) {
 						<CloseOutlined className='text-[28px]' />
 					</button>
 
-					
 					<h2 className='mb-7 pr-12 text-3xl font-bold text-[#21385f] max-sm:text-2xl'>
 						Заполните форму
 					</h2>
 
 					<form className='flex flex-col gap-4' onSubmit={handleSubmit}>
-						
 						<div className='relative'>
 							<input
 								type='text'
@@ -59,7 +56,6 @@ export default function OrderModalForm({ isOpen, onClose }) {
 							<UserOutlined className='absolute right-5 top-1/2 -translate-y-1/2 text-lg text-[#21385f]' />
 						</div>
 
-						
 						<div className='relative'>
 							<input
 								type='tel'
@@ -70,7 +66,6 @@ export default function OrderModalForm({ isOpen, onClose }) {
 							<PhoneOutlined className='absolute right-5 top-1/2 -translate-y-1/2 text-lg text-[#21385f]' />
 						</div>
 
-						
 						<div className='relative'>
 							<input
 								type='email'
