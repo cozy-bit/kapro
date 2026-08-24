@@ -8,7 +8,6 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#203253] text-white py-10 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
-        {/* Логотипы слева */}
         <div className="flex flex-col items-center md:items-start gap-3">
           <div>
             <div className="font-bold text-2xl tracking-tight text-white mb-2">
@@ -27,7 +26,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Навигация по центру */}
         <nav className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-sm text-gray-200">
           <Link to="/" className="hover:text-white transition-colors">
             Главная
@@ -43,9 +41,7 @@ export default function Footer() {
           </Link>
         </nav>
 
-        {/* Соцсети и QR-код строго по центру относительно друг друга */}
         <div className="flex flex-col items-center gap-3">
-          {/* Иконки WeChat и WhatsApp отцентрированы */}
           <div className="flex items-center justify-center gap-3">
             <a
               href="weixin://dl/chat"
@@ -73,7 +69,6 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* QR-код */}
           <div className="w-28 h-28 rounded-xl flex items-center justify-center shadow-xs">
             <img
               src={qrCode}
