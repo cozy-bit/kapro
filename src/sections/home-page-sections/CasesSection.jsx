@@ -5,7 +5,8 @@ import adress from '../../assets/home-page-images/adress.png'
 import airplane from '../../assets/home-page-images/ariplane.png'
 import kargo7292 from '../../assets/home-page-images/kargo729-2.png'
 import kargo729 from '../../assets/home-page-images/kargo729.png'
-import ships from '../../assets/home-page-images/ships.png'
+import shipsTop from '../../assets/home-page-images/ships-top.png'
+import shipsBottom from '../../assets/home-page-images/ships-bottom.png'
 import timer from '../../assets/home-page-images/timer.png'
 import yuan from '../../assets/home-page-images/yuan.png'
 import OrderModalForm from '../../components/UI/Modal'
@@ -86,7 +87,18 @@ export function CasesSection() {
 						/>
 					</aside>
 					<img src={airplane} alt='airplane' className='w-full md:hidden' />
-					<img src={ships} alt='airplane' className='w-full hidden md:block' />
+					<div className='hidden w-full flex-col md:flex'>
+						<img
+							src={shipsTop}
+							alt='ships'
+							className='w-full animate-sail-right'
+						/>
+						<img
+							src={shipsBottom}
+							alt='ships'
+							className='w-full animate-sail-left'
+						/>
+					</div>
 				</div>
 				<OrderModalForm
 					isOpen={isModalOpen}

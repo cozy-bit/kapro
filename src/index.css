@@ -14,3 +14,29 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+@keyframes sail-right {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(16px);
+  }
+}
+
+@keyframes sail-left {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-16px);
+  }
+}
+
+.animate-sail-right {
+  animation: sail-right 3s ease-in-out infinite;
+}
+
+.animate-sail-left {
+  animation: sail-left 3s ease-in-out infinite;
+}
