@@ -30,7 +30,7 @@ export default function ContactsPage() {
 	return (
 		<section className='px-2'>
 			<div className='flex flex-col gap-6 md:m-auto md:max-w-350 md:flex-row md:items-stretch md:gap-8'>
-				<div className='flex flex-col gap-6 rounded-2xl bg-[#F4FAFF] p-5 md:w-125 md:shrink-0 md:gap-8 md:rounded-3xl md:p-10'>
+				<div className='flex flex-col gap-6 rounded-2xl bg-[#B1DDFF] p-5 md:w-125 md:shrink-0 md:gap-8 md:rounded-3xl md:p-10'>
 					<div className='flex flex-col gap-3'>
 						<h1 className='text-[28px] font-bold text-[#203253] md:text-[40px]'>
 							Контакты
@@ -77,16 +77,16 @@ export default function ContactsPage() {
 					</div>
 				</div>
 
-				<div className='flex flex-1 flex-col gap-4 md:gap-6'>
+				<div className='flex flex-col gap-4 md:w-125 md:gap-6'>
 					<img
 						src={photo1}
 						alt='Офис Kapro'
-						className='h-56 w-full rounded-2xl object-cover md:h-auto md:flex-1 md:rounded-3xl'
+						className='h-56 w-full rounded-2xl object-cover md:h-70 md:rounded-3xl'
 					/>
 					<img
 						src={photo2}
 						alt='Склад Kapro'
-						className='h-56 w-full rounded-2xl object-cover md:h-auto md:flex-1 md:rounded-3xl'
+						className='h-56 w-full rounded-2xl object-cover md:h-70 md:rounded-3xl'
 					/>
 				</div>
 			</div>

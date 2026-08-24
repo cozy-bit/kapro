@@ -72,7 +72,7 @@ export function ContactFormSection() {
 					</div>
 				</div>
 
-				<div className='rounded-2xl bg-[#F4FAFF] p-5 md:order-1 md:w-155 md:rounded-3xl md:p-9'>
+				<div className='rounded-2xl bg-[#B1DDFF] p-5 md:order-1 md:w-155 md:rounded-3xl md:p-9'>
 					<form onSubmit={handleSubmit} className='flex flex-col gap-3 md:gap-5'>
 						<Input
 							type='text'

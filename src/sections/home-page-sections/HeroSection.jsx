@@ -72,7 +72,7 @@ export function HeroSection() {
 				<img
 					src={heroPhoto}
 					alt='Менеджер Kapro'
-					className='h-56 w-full object-cover object-top md:h-auto md:w-[45%] md:object-center'
+					className='h-56 w-full object-cover object-top md:ml-auto md:h-auto md:w-[45%] md:object-center'
 				/>
 			</div>
 		</section>

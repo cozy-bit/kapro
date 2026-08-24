@@ -13,8 +13,8 @@ const mobilePages = chunk(advantagesData, 2)
 
 function AdvantageCard({ icon, text }) {
 	return (
-		<div className='flex flex-col items-start gap-2.5 rounded-3xl bg-[#F4FAFF] p-5 md:p-6'>
-			<img src={icon} alt='' className='size-14 md:size-12' />
+		<div className='flex flex-col items-start gap-2.5 rounded-3xl bg-[#B1DDFF] p-5 transition-transform duration-200 hover:-translate-y-2.5 md:p-6'>
+			<img src={icon} alt='' className='size-28 md:size-24' />
 			<p className='text-[16px] font-bold text-[#203253]'>{text}</p>
 		</div>
 	)
