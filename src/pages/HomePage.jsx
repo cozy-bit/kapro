@@ -1,6 +1,7 @@
 import { HeroSection } from '../sections/home-page-sections/HeroSection'
 import { AdvantagesSection } from '../sections/home-page-sections/AdvantagesSection'
 import { CasesSection } from '../sections/home-page-sections/CasesSection'
+import { ContactFormSection } from '../sections/home-page-sections/ContactFormSection'
 
 export default function HomePage() {
 	return (
@@ -8,6 +9,7 @@ export default function HomePage() {
 			<HeroSection />
 			<AdvantagesSection />
 			<CasesSection />
+			<ContactFormSection />
 		</div>
 	)
 }

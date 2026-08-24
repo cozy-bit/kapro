@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Layout from '../components/layout/Layout'
 import HomePage from '../pages/HomePage'
+import ContactsPage from '../pages/ContactsPage'
 
 // пока оставлю заглушки для страниц чтобы проверить роутинг
 // const HomePage = () => <div className="text-center py-20 font-medium">Главная страница (В разработке)</div>;
@@ -13,9 +14,6 @@ const FaqPage = () => (
 	<div className='text-center py-20 font-medium'>
 		Вопросы и ответы (В разработке)
 	</div>
-)
-const ContactsPage = () => (
-	<div className='text-center py-20 font-medium'>Контакты (В разработке)</div>
 )
 const NotFoundPage = () => (
 	<div className='text-center py-20 font-bold text-2xl'>
