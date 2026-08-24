@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { NavLink } from 'react-router-dom';
 
 const navLinks = [
@@ -8,11 +10,28 @@ const navLinks = [
 ];
 
 export default function MobileMenu({ isOpen, onClose }) {
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
-  return (
-    <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm md:hidden flex justify-end">
-      <div className="w-[280px] bg-white h-full p-6 flex flex-col justify-between shadow-xl animate-in slide-in-from-right duration-200">
+  return createPortal(
+    <div
+      className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm md:hidden flex justify-end"
+      onClick={onClose}
+    >
+      <div
+        className="w-[280px] max-w-[85vw] bg-white h-full p-6 flex flex-col justify-between shadow-xl"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div>
           <div className="flex justify-end mb-8">
             <button
@@ -49,6 +68,7 @@ export default function MobileMenu({ isOpen, onClose }) {
           © H729 Kapro
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
